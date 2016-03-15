@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="signup.js" type="text/javascript"></script>
+</head>
+<body class="container" style="background-color:white;">
+
+<div class="container">
+    <form role="form" action="signup_confirm.html" method="post" onsubmit="
+    if(validate(this) == false) return false; addcustomer(this);">
+        <table border="0" cellspacing="1" cellpadding="3">
+            <tr><td colspan="2" align="center"><h1>Enter your information</h1><br></br></td></tr>
+            <tr><td><mark>Email Address: </mark></td><td><input size="20" type="text" name="emailaddress" class="form-control"><span id="emailmsg" ></span></td></tr>
+            <tr><td><mark>Password: </mark></td><td><input size="20" type="password" name="password" class="form-control"><span id="passwdmsg" ></span></td></tr>
+            <tr><td><mark>ReType Password:  </mark></td><td><input size="20" type="password" name="repassword" class="form-control"><span id="repasswdmsg"></span></td></tr>
+            <tr><td><mark>Full Name  </mark></td><td><input size="50" type="text" name="fullname" class="form-control" ><span id="usrmsg" ></span></td></tr>
+            <tr><td><mark>Address:  </mark></td><td><input size="80" type="text" name="address" class="form-control"></td></tr>
+            <tr><td><mark>City:  </mark></td><td><input size="30" type="text" name="city" class="form-control"></td></tr>
+            <tr><td><mark>State:</mark></td><td> <select name="state" class="form-control">
+            <option value="CA">CA</option>
+            <option value="NY">NY</option>
+            <option value="TX">TX</option>
+            <option value="WA">WA</option>
+            </select></td></tr>
+            <tr><td><mark>Country:  </mark></td><td><input size="30" type="text" name="country" class="form-control"></td></tr>
+            <tr><td><mark>Zip Code:  </mark></td><td><input size="20" type="text" name="zipcode" class="form-control"></td></tr>
+            <tr><td><mark>Phone No:  </mark></td><td><input size="30" type="text" name="phoneno" class="form-control"></td></tr>
+            
+        </table>
+        <br></br>
+        <div class="container"  align="center">
+        <button type="submit" name="submit"  class="btn btn-primary">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="reset" name="cancel"  class="btn btn-danger">Cancel</button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
+
+
